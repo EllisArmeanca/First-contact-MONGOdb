@@ -1,0 +1,35 @@
+{
+  "name": "bdnv-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon index.js",
+    "start": "node index.js",
+    "cli": "node scripts/cli.js",
+    "crud": "node scripts/crud.js",
+    "agg": "node scripts/aggregations.js",
+    "mongo:01": "node scripts/01_insert_core.mongoose.js",
+    "mongo:02": "node scripts/02_insert_evenimente_ref.mongoose.js",
+    "mongo:03": "node scripts/03_insert_links.mongoose.js",
+    "mongo:04": "node scripts/04_update.mongoose.js",
+    "mongo:05": "node scripts/05_delete.mongoose.js",
+    "mongo:06": "node scripts/06_aggregations.mongoose.js",
+    "mongo:read": "node scripts/READevenimente.mongoose.js",
+    "mongo:readmodel": "node scripts/READmodel.mongoose.js"
+
+
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^17.2.3",
+    "mongoose": "^9.0.2",
+    "readline-sync": "^1.4.10"
+  },
+  "devDependencies": {
+    "dotenv-cli": "^11.0.0"
+  }
+}
